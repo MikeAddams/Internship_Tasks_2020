@@ -19,6 +19,13 @@ namespace Flow_control
 
                     Console.WriteLine("\nFirst character was removed\nCurrent string => " + str);
                 }
+                else if( Char.IsNumber(str, 0) && !Char.IsNumber(str, 1) )
+                {
+                    int n = Int16.Parse( str.Substring(0, 1) );
+
+                    if( n < 5 )
+                        Console.WriteLine("First char is a number lower than 5");
+                }
 
             }
             else
