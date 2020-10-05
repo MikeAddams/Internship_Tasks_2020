@@ -19,7 +19,13 @@ namespace ConsoleApp2
 
             try
             {
+                int result = 0;
+                Calculator calc = new Calculator();
+
                 validateInput(input1, input2);
+                
+                result = calc.Add(input1, input2);
+                Console.WriteLine($"\n{input1} + {input2} = {result}");
             }
             catch(Exception e)
             {
