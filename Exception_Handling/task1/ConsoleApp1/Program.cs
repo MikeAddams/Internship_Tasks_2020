@@ -10,7 +10,6 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             string input;
-            bool exception = false;
 
             Console.WriteLine("input: ");
             input = Console.ReadLine();
@@ -18,17 +17,12 @@ namespace ConsoleApp1
             try
             {
                 ValidateInput(input);
+
+                Console.WriteLine($"\nYour input: {input}");
             }
             catch(Exception e)
             {
-                exception = true;
-
                 Console.WriteLine(e.Message);
-            }
-
-            if (!exception)
-            {
-                Console.WriteLine($"\nYour input: {input}");
             }
 
             Console.ReadKey();
