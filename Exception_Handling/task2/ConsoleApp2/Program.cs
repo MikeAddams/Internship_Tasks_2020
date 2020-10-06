@@ -44,7 +44,7 @@ namespace ConsoleApp2
 
                 if (n1 < 1 || n2 < 1)
                 {
-                    throw new NotPositiveNumberException("One of the inputs is not a number or positive");
+                    throw new NegativeNumberException("One of the inputs is not a number or positive");
                 }
             }
         }

@@ -4,10 +4,10 @@ using System.Text;
 
 namespace ConsoleApp2.SpecialExceptions
 {
-    class NotPositiveNumberException : Exception
+    class NegativeNumberException : Exception
     {
         public override string Message { get; }
-        public NotPositiveNumberException(string message)
+        public NegativeNumberException(string message)
             :base(message)
         {
             Message = "\n" + message;
